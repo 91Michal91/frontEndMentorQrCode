@@ -1,0 +1,65 @@
+body{
+    background-color: #d5e1ef;
+}
+* {
+    margin: 0;
+    border: 0;
+  }
+  
+.bold-text {
+    font-weight: bold;
+  }
+  
+.container {
+    display: flex;
+    
+    justify-content: center; /* Centruje elementy w poziomie */
+    align-items: center; /* Centruje elementy w pionie */
+    height: 100vh; /* Zapewnia, że kontener zajmuje całą wysokość widoku */
+    flex-direction: column; /* Ustawia elementy jeden nad drugim */
+    
+    border-radius: 15px; /* Tu ustawiasz wartość zaokrąglenia rogów */
+    overflow: hidden; /* Zapobiega wystawaniu dzieci poza zaokrąglone rogi */
+   
+    padding: 10px;
+}
+.container div {
+    background-color: #fff;
+    padding: 30px;
+    border-radius:15px;
+    
+}
+  
+@media (max-width: 800px) {
+    .container{
+      /* Tutaj dostosowujesz styl kontenera dla ekranów mniejszych niż 800px */
+      
+    }
+  
+    img {
+      max-width: 350px;
+      height: auto;
+      /* Usuwa ustalone wymiary i pozwala obrazowi być w pełni responsywnym */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .container{
+      /* Tutaj dostosowujesz styl kontenera dla ekranów mniejszych niż 500px */
+    }
+  
+    img {
+      max-width: 250px;
+      height: auto;
+      /* Dalsze dostosowania dla jeszcze mniejszych ekranów */
+    }
+  }
+  
+img {
+    border-radius: 15px; /* Tu ustawiasz wartość zaokrąglenia rogów */
+    display: block; /* Zapobiega domyślnym marginesom/miejscom białym wokół obrazków */
+    width: 400px;
+    height: 400px;
+  }
+  .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
